@@ -1,25 +1,17 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgeFinder", "AgeFinder\AgeFinder.csproj", "{172AC59C-E228-4355-B2B1-8D0EF007EA81}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{172AC59C-E228-4355-B2B1-8D0EF007EA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{172AC59C-E228-4355-B2B1-8D0EF007EA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{172AC59C-E228-4355-B2B1-8D0EF007EA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{172AC59C-E228-4355-B2B1-8D0EF007EA81}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2D72577B-ECF1-4B93-BEF7-A20080D82B3D}
-	EndGlobalSection
-EndGlobal
+using System;
+
+namespace AgeFinder
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your age");
+
+            string age = Console.ReadLine();
+
+            int birth_year = 2021 - int.Parse(age);
+            Console.WriteLine("Your birth year is" + birth_year);
+        }
+    }
+}
